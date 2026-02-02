@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "concurrently \"node scripts/themeGenerator.js --watch\" \"yarn generate-json && astro dev\"",
     "build": "node scripts/themeGenerator.js && yarn generate-json && astro build",
-		"deploy": "wrangler pages deploy ./dist",
+		"deploy": "wrangler pages deploy ./dist --project-name=codeguy-astroplate",
     "preview": "astro preview",
     "check": "astro check",
     "format": "prettier -w ./src",
