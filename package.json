@@ -9,8 +9,8 @@
   "scripts": {
     "dev": "concurrently \"node scripts/themeGenerator.js --watch\" \"yarn generate-json && astro dev\"",
     "build": "node scripts/themeGenerator.js && yarn generate-json && astro build",
+    "deploy": "wrangler pages deploy ./dist",
     "preview": "astro preview",
-    "deploy": "yarn build && wrangler deploy",
     "check": "astro check",
     "format": "prettier -w ./src",
     "generate-json": "node scripts/jsonGenerator.js",
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.6",
-    "@astrojs/cloudflare": "12.6.12",
+    "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/mdx": "4.3.13",
     "@astrojs/react": "4.4.2",
     "@astrojs/sitemap": "3.7.0",
