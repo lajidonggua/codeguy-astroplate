@@ -1,5 +1,0 @@
-name = "codeguy-astroplate"
-compatibility_date = "2025-10-08"
-compatibility_flags = ["nodejs_compat"]
-
-# Pages 模式不需要设置 main 和 assets 绑定，直接指定输出目录
