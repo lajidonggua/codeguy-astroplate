@@ -16,7 +16,12 @@ export default defineConfig({
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   image: { service: sharp() },
-  vite: { plugins: [tailwindcss()] },
+  vite: {
+    plugins: [tailwindcss()],
+    ssr: {
+      external: ["node:path", "node:buffer", "node:fs", "node:os"],
+    },
+  },
   integrations: [
     react(),
     sitemap(),
