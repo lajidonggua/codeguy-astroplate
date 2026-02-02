@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Astroplate",
+    "title": "CodeGuy",
     "base_url": "https://astroplate.netlify.app",
     "base_path": "/",
     "trailing_slash": false,
@@ -9,7 +9,7 @@
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "150",
     "logo_height": "30",
-    "logo_text": "Astroplate"
+    "logo_text": "CodeGuy"
   },
 
   "settings": {
@@ -23,7 +23,7 @@
   },
 
   "announcement": {
-    "enable": true,
+    "enable": false,
     "content": "<span class='text-center block'>♥️ Loving Astroplate? <a class='underline' href='https://github.com/zeon-studio/astroplate' target='_blank' rel='noopener'>Please ⭐️ on Github</a></span>",
     "expire_days": 7
   },

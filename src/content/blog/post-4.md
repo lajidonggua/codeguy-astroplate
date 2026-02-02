@@ -1,23 +1,41 @@
 ---
-title: "How to build an Application with modern Technology"
-meta_title: ""
-description: "this is meta description"
-date: 2022-04-04T05:00:00Z
-image: "/images/image-placeholder.png"
-categories: ["Architecture"]
-author: "John Doe"
-tags: ["silicon", "technology"]
+title: "Java 基础（四）：面向对象入门"
+meta_title: "Java 基础（四）"
+description: "类与对象、构造方法、封装的基本概念"
+date: 2026-01-26T08:00:00Z
+categories: ["Java 基础"]
+author: "codeguy"
+tags: ["java", "基础"]
 draft: false
 ---
 
-Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+面向对象是 Java 的核心思想，下面是入门级别的概念梳理。
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+## 1. 类与对象
 
-## Creative Design
+```java
+class Person {
+ String name;
+ int age;
+}
 
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+Person p = new Person();
+p.name = "codeguy";
+p.age = 18;
+```
 
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+## 2. 构造方法
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+```java
+class Person {
+ String name;
+ Person(String name) {
+  this.name = name;
+ }
+}
+```
+
+## 3. 封装
+
+- 使用 `private` 隐藏内部字段
+- 通过 `get/set` 暴露必要能力
